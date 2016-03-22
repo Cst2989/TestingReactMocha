@@ -5,7 +5,7 @@ Checkout this repo, install depdencies, then start the gulp process with the fol
 
 ```
 	> git clone https://github.com/Cst2989/TestingReactMocha.git
-	> cd ReduxSimpleStarter
+	> cd TestingReactMocha
 	> npm install
 	> npm start
 ```
