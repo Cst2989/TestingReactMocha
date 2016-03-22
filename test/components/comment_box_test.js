@@ -20,13 +20,17 @@ describe('Comment Box' , () => {
 	});
 
 	describe('entering some text',() => {
+		beforeEach(() => {
+			component.find('textarea').simulate('change','new comment');
+		});
 
-		it('shows text that is entered', () => {
-
+		it('shows that text in the textarea', () => {
+			expect(component.find('textarea')).to.have.value('new comment');
 		});
 
 		it('when submitted, clears input', () => {
-
+			component.simulate('submit');
+			expect(component.find('textarea')).to.have.value('');
 		});
 	});
 	
